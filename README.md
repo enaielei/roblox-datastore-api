@@ -8,7 +8,7 @@ local DataStoreApi = require(game.ReplicatedStorage.DataStoreApi)
 ---
 
 # Quickstart
-## Creating a new DataStoreApi instance
+## Creating a `DataStoreApi` instance
 1. Create a new [Roblox API Key](https://create.roblox.com/dashboard/credentials) and copy it.
 2. Identify the game/experience's universe ID that you want to target. Can be identified using `game.GameId`.
 3. Pass the `api_key` and `universe_id` to the `DataStoreApi:new` constructor.
@@ -56,3 +56,10 @@ api:delete_ordered("store_name", "key")
 
 # Documentation
 In progress...
+
+---
+
+# References
+* [Standard DataStore API](https://create.roblox.com/docs/reference/cloud/datastores-api/v1)
+* [Ordered DataStore API](https://create.roblox.com/docs/reference/cloud/datastores-api/ordered-v1)
+* [RoProxy](https://devforum.roblox.com/t/roproxycom-a-free-rotating-proxy-for-roblox-apis/1508367)
