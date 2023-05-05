@@ -1,11 +1,12 @@
 
+
 # Overview
 This module facilitates `DataStore` and `OrderedDataStore` communication between different Roblox experiences or games. Currently, it allows basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations by passing parameters to the Standard Data Store and Ordered Data Store API endpoints and sending them over as requests.
 
 ---
 
 # Installation
-1. Copy the `DataStoreApi.lua` module inside `ReplicatedStorage` or `ServerStorage`.
+1. Copy the `DataStoreApi.lua` module file inside `ReplicatedStorage` or `ServerStorage`.
 2. Import it in your scripts.
 ```lua
 local DataStoreApi = require(game.ReplicatedStorage.DataStoreApi)
@@ -24,38 +25,46 @@ local api = DataStoreApi:new("api_key", "universe_id")
 ## Creating a store entry
 ### Standard
 ```lua
-api:set("store_name", "key", {a=1, b="b", c=3})
+local result = api:set("store_name", "key", {a=1, b="b", c=3})
+print(result and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-api:set_ordered("store_name", "key", 1)
+local result = api:set_ordered("store_name", "key", 1)
+print(result and "succeeded!" or "failed!")
 ```
 ## Getting a store entry
 ### Standard
 ```lua
-api:get("store_name", "key")
+local result = api:get("store_name", "key")
+print(result)
 ```
 ### Ordered
 ```lua
-api:get_ordered("store_name", "key")
+local result = api:get_ordered("store_name", "key")
+print(result)
 ```
 ## Updating a store entry
 ### Standard
 ```lua
-api:update("store_name", "key", "new_value")
+local result = api:update("store_name", "key", "new_value")
+print(result and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-api:update_ordered("store_name", "key", 5)
+local result = api:update_ordered("store_name", "key", 5)
+print(result and "succeeded!" or "failed!")
 ```
 ## Deleting a store entry
 ### Standard
 ```lua
-api:delete("store_name", "key")
+local result = api:delete("store_name", "key")
+print(result and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-api:delete_ordered("store_name", "key")
+local result = api:delete_ordered("store_name", "key")
+print(result and "succeeded!" or "failed!")
 ```
 
 ---
