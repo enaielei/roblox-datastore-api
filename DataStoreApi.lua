@@ -67,8 +67,9 @@ function DataStoreApi.warn(method: string, ...: any)
 end
 
 ---@return DataStoreApi
-function DataStoreApi:new(key: string, universe: string)
-    self = setmetatable({}, DataStoreApi)
+function DataStoreApi.new(key: string, universe: string)
+    ---@type DataStoreApi
+    local self = setmetatable({}, DataStoreApi)
 
     self.key = key
     self.universe = universe
