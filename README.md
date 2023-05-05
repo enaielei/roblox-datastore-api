@@ -69,11 +69,6 @@ print(response and "succeeded!" or "failed!")
 
 ---
 
-# Documentation
-In progress...
-
----
-
 # References
 * [Standard DataStore API](https://create.roblox.com/docs/reference/cloud/datastores-api/v1)
 * [Ordered DataStore API](https://create.roblox.com/docs/reference/cloud/datastores-api/ordered-v1)
