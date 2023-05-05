@@ -25,46 +25,46 @@ local api = DataStoreApi:new("api_key", "universe_id")
 ## Creating a store entry
 ### Standard
 ```lua
-local result = api:set("store_name", "key", {a=1, b="b", c=3})
-print(result and "succeeded!" or "failed!")
+local response = api:set("store_name", "key", {a=1, b="b", c=3})
+print(response and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-local result = api:set_ordered("store_name", "key", 1)
-print(result and "succeeded!" or "failed!")
+local response = api:set_ordered("store_name", "key", 1)
+print(response and "succeeded!" or "failed!")
 ```
 ## Getting a store entry
 ### Standard
 ```lua
-local result = api:get("store_name", "key")
-print(result)
+local response = api:get("store_name", "key")
+print(response)
 ```
 ### Ordered
 ```lua
-local result = api:get_ordered("store_name", "key")
-print(result)
+local response = api:get_ordered("store_name", "key")
+print(response.value)
 ```
 ## Updating a store entry
 ### Standard
 ```lua
-local result = api:update("store_name", "key", "new_value")
-print(result and "succeeded!" or "failed!")
+local response = api:update("store_name", "key", "new_value")
+print(response and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-local result = api:update_ordered("store_name", "key", 5)
-print(result and "succeeded!" or "failed!")
+local response = api:update_ordered("store_name", "key", 5)
+print(response and "succeeded!" or "failed!")
 ```
 ## Deleting a store entry
 ### Standard
 ```lua
-local result = api:delete("store_name", "key")
-print(result and "succeeded!" or "failed!")
+local response = api:delete("store_name", "key")
+print(response and "succeeded!" or "failed!")
 ```
 ### Ordered
 ```lua
-local result = api:delete_ordered("store_name", "key")
-print(result and "succeeded!" or "failed!")
+local response = api:delete_ordered("store_name", "key")
+print(response and "succeeded!" or "failed!")
 ```
 
 ---
