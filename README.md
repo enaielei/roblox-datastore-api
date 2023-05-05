@@ -42,7 +42,7 @@ print(response)
 ### Ordered
 ```lua
 local response = api:get_ordered("store_name", "key")
-print(response and response.value or nil)
+print(response and response.value)
 ```
 ## Updating a store entry
 ### Standard
