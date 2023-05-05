@@ -16,7 +16,7 @@ local DataStoreApi = require(game.ReplicatedStorage.DataStoreApi)
 
 # Quickstart
 ## Creating a `DataStoreApi` instance
-1. Create a new [Roblox API Key](https://create.roblox.com/dashboard/credentials) and copy it. The key should have read and write access permissions to both `Ordered DataStore` and `DataStore`. For the Accepted IP Addresses you can just include `0.0.0.0/0` as stated in [here](https://create.roblox.com/docs/reference/cloud/managing-api-keys#creating-api-keys).
+1. Create a new [Roblox API Key](https://create.roblox.com/dashboard/credentials) and copy it. The key should have read and write access permissions to both `Ordered DataStore` and `DataStore`. For the Accepted IP Addresses, you can just include `0.0.0.0/0` as stated in [here](https://create.roblox.com/docs/reference/cloud/managing-api-keys#creating-api-keys).
 2. Identify the game/experience's universe ID that you want to target. It can be identified using `game.GameId`.
 3. Pass the `api_key` and `universe_id` to the `DataStoreApi.new` constructor.
 ```lua
