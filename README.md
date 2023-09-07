@@ -1,7 +1,7 @@
 
 
 # Overview
-This module facilitates `DataStore` and `OrderedDataStore` communication between different Roblox experiences or games. Currently, it allows basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations by passing parameters to the Standard Data Store and Ordered Data Store API endpoints and sending them over as requests.
+This module facilitates [`DataStore`](https://create.roblox.com/docs/reference/cloud/datastores-api/v1) and [`OrderedDataStore`](https://create.roblox.com/docs/reference/cloud/datastores-api/ordered-v1) communication between different Roblox experiences or games. Currently, it allows basic [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations by passing parameters to the Standard Data Store and Ordered Data Store API endpoints and sending them over as requests.
 
 ---
 
